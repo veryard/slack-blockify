@@ -1,13 +1,13 @@
-name: "Slack Markdown to Blocks"
-author: "Brad"
-description: "Converts Slack Markdown to Slack Blocks"
+name: Slack Markdown to Blocks
+author: Brad
+description: Converts Slack Markdown to Slack Blocks
 inputs:
   text:
-    description: "The Slack Markdown text to convert"
+    description: The Slack Markdown text to convert
     required: true
 outputs:
   text:
-    description: "The converted Slack Blocks (string)"
+    description: The converted Slack Blocks (string)
 runs:
-  using: "node16"
-  main: "index.js"
+  using: node16
+  main: dist/index.js
