@@ -8,7 +8,8 @@ const { markdownToBlocks } = require('@tryfabric/mack');
             let json = JSON.stringify(res, null, 2);
             // remove first [ and last ]
             json = json.substring(1, json.length - 1);
-            core.setOutput("json", json);
+            core.setOutput("text", json);
+            core.info(`JSON: ${json}`);
         })
 
     } catch (error) {
