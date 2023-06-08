@@ -2,9 +2,9 @@
   "name": "slack-blockify",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "npx @vercel/ncc build src/index.js"
+    "build": "npx @vercel/ncc build src/index.js && npx convert-action"
   },
   "keywords": [],
   "author": "",
